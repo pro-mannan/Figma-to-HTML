@@ -626,3 +626,255 @@ nav ul li a:hover{
    }
 }
 
+
+/* testimonial section start now */
+
+.testimonial{
+   padding:70px 0;
+   background-color: #EFF2F1;
+}
+
+.inner_testimonial{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.testi_content{
+   text-align: center;
+}
+
+.left_testi, .right_testi{
+   max-width:58px;
+   width:100%;
+   height: 58px;
+   background-color: #C4C4C4;
+   border-radius:50px;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.6s;
+   cursor:pointer;
+}
+.left_testi:hover, .right_testi:hover{
+   background-color: #385D50;
+}
+.left_testi i{
+   padding:25px;
+   font-size:22px;
+   color:#000;
+}
+
+.testi_content .s_header > p{
+   max-width: 75%;
+   margin: 24px auto 0;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 32px;
+   text-align: center;
+   color: #000000;
+}
+.testi_user{
+   margin-top:41px;
+}
+.testi_user img{
+   max-width:86px;
+   height:86px;
+   border-radius:50px;
+}
+.testi_user h4{
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   color: #000000;
+   margin-top:4px;
+}
+.testi_user p{
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 32px;
+   text-align: center;
+   color: #2F2F2F;
+}
+ul.testi_nav{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   margin-top:40px;
+}
+ul.testi_nav li{
+   width:10px;
+   height: 10px;
+   background-color: #D9D9D9;
+   margin: 0 6.5px;
+   border-radius:50px;
+   transition: 0.4s;
+}
+ul.testi_nav li.active{
+   background-color: #385D50;
+}
+ul.testi_nav li:hover{
+   background-color: #385D50;
+}
+
+@media screen and (max-width:991px) {
+   .testi_content .s_header > p{
+      font-size: 16px;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .testi_content .s_header > p{
+      font-size: 14px;
+      line-height: 20px;
+   }
+}
+
+/* latext post style */
+
+.latest_post{
+   padding:70px 0 130px;
+   background-color: #EFF2F1;
+}
+.latest_post_top{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.latest_post_top h2{
+   font-weight: 600;
+   font-size: 34px;
+   line-height: 41px;
+   color: #2F2F2F;
+}
+.latest_post_top a{
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 41px;
+   color: #2F2F2F;
+   border-bottom: 3px solid transparent;
+}
+.latest_post_top a:hover{
+   border-bottom: 3px solid #000000;
+}
+
+.latest_posts{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top:36px;
+   gap: 10px;
+}
+
+.single_post a img{
+   max-width:382px;
+   height: 250px;
+   border-radius: 10px;
+}
+.single_post a h5{
+   margin-top:40px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: #2F2F2F;
+}
+.single_post p{
+   font-style: italic;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   color: #2F2F2F;
+   margin-top:5px;
+}
+
+@media screen and (max-width:991px) {
+   .latest_posts{
+      flex-wrap:wrap;
+   }
+   .single_post{
+      margin-bottom:20px;
+   }
+}
+@media screen and (max-width:768px) {
+   .latest_posts{
+      justify-content: center;
+   }
+}
+
+
+/* footer section start now */
+
+
+
+.footer_info{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.footer_left h2{
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: #2F2F2F;
+}
+.footer_left h2 i{
+   margin-right: 10px;
+}
+.subscribet{
+   margin-top:35px;
+}
+
+.subscribet input{
+   border: 1px solid #C4C4C4;
+   border-radius: 10px;
+   padding: 12px 22px;
+   font-size:16px;
+   margin: 0 5px;
+   outline:1px solid #C4C4C4;
+}
+.subscribet button{
+   border: 1px solid #C4C4C4;
+   border-radius: 10px;
+   padding: 10px;
+   font-size:16px;
+   background-color: #35736E;
+   cursor:pointer;
+}
+.subscribet button i{
+   font-size:20px;
+   color:#fff;
+}
+.footer_right{
+   
+}
+.footer_right img{
+   max-width:458px;
+   width:100%;
+   height: 398px;
+   transform: translateY(-90px);
+}
+
+
+@media screen and (max-width:991px) {
+   .subscribet button{
+      margin-top:20px;
+   }
+}
+@media screen and (max-width:578px) {
+   .footer_info{
+      flex-direction: column;
+   }
+   .footer_left{
+      margin-top:50px;
+   }
+   .subscribet{
+      margin-top:5px;
+   }
+   .footer_right img{
+
+      transform: translateY(40px);
+   }
+}
